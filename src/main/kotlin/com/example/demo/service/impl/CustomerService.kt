@@ -21,3 +21,4 @@ class CustomerService(
     override fun delete(id: Long) {
         return this.customerRepository.deleteById(id)
     }
+}
