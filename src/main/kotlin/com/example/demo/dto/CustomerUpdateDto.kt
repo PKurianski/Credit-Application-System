@@ -1,16 +1,18 @@
 package com.example.demo.dto
 
 import com.example.demo.entity.Customer
+import jakarta.validation.constraints.NotEmpty
+import jakarta.validation.constraints.NotNull
 import java.math.BigDecimal
 
 data class CustomerUpdateDto(
-    val firstName : String,
-    val lastName: String,
-    val income: BigDecimal,
-    val zipCode: String,
-    val street: String
+    @field:NotEmpty(message = "Invalid Input, empty or null") val firstName: String,
+    @field:NotEmpty(message = "Invalid Input, empty or null") val lastName: String,
+    @field:NotNull(message = "Invalid Input, null") val income: BigDecimal,
+    @field:NotEmpty(message = "Invalid Input, empty or null") val zipCode: String,
+    @field:NotEmpty(message = "Invalid Input, empty or null") val street: String
 ) {
-    fun toEntity(customer: Customer):Customer{
+    fun toEntity(customer: Customer): Customer {
         customer.firstName = this.firstName
         customer.lastName = this.lastName
         customer.income = this.income
