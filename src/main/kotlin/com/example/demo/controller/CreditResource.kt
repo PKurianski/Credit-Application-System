@@ -27,7 +27,7 @@ class CreditResource(
         val credit: Credit = this.CreditService.save(creditDto.toEntity())
         return ResponseEntity
             .status(HttpStatus.CREATED)
-            .body("Credit ${credit.creditCode} - Customer ${credit.customer?.firstName} saved!")
+            .body("Credit ${credit.creditCode} - Customer ${credit.customer?.email} saved!")
     }
 
     @GetMapping

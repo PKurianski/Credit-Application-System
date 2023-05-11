@@ -14,6 +14,7 @@ data class Credit (
     @Column(nullable = false) val dayFirstInstallment: LocalDate,
     @Column(nullable = false) val numberOfInstallments: Int = 0,
     @Enumerated val status: Status = Status.IN_PROGRESS,
+    //Poderia ser @Enumerated(value = EnumType.STRING), e ao gerar a DDL o status sera de varchar mostrando o que está no enum
     @ManyToOne var customer: Customer? = null,
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: Long? = null
 )
