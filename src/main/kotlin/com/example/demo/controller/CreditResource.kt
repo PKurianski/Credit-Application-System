@@ -1,8 +1,8 @@
 package com.example.demo.controller
 
-import com.example.demo.dto.CreditDto
-import com.example.demo.dto.CreditView
-import com.example.demo.dto.CreditViewList
+import com.example.demo.dto.request.CreditDto
+import com.example.demo.dto.response.CreditView
+import com.example.demo.dto.response.CreditViewList
 import com.example.demo.entity.Credit
 import com.example.demo.service.impl.CreditService
 import jakarta.validation.Valid

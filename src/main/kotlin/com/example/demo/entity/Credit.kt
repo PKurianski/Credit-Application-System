@@ -2,6 +2,7 @@ package com.example.demo.entity
 
 import com.example.demo.entity.enummeration.Status
 import jakarta.persistence.*
+import org.hibernate.Hibernate
 import java.math.BigDecimal
 import java.time.LocalDate
 import java.util.UUID

@@ -1,4 +1,4 @@
-package com.example.demo.dto
+package com.example.demo.dto.request
 
 import java.math.BigDecimal
 import java.time.LocalDate
