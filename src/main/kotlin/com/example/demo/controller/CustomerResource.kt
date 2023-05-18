@@ -1,8 +1,8 @@
 package com.example.demo.controller
 
-import com.example.demo.dto.CustomerDto
-import com.example.demo.dto.CustomerUpdateDto
-import com.example.demo.dto.CustomerView
+import com.example.demo.dto.request.CustomerDto
+import com.example.demo.dto.request.CustomerUpdateDto
+import com.example.demo.dto.response.CustomerView
 import com.example.demo.entity.Customer
 import com.example.demo.service.impl.CustomerService
 import jakarta.validation.Valid
